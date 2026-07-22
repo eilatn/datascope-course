@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="תיאור היחידה">
+  <title>שם היחידה | דטהסקופ</title>
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/framework.css">
+
+  <script src="../assets/js/components.js" defer></script>
+  <script src="../assets/js/framework.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">דלגו לתוכן המרכזי</a>
+
+  <header class="ds-app-header">
+    <div class="ds-app-header__inner">
+      <a class="ds-app-brand" href="../index.html">
+        <span class="ds-app-brand__mark" aria-hidden="true">◉</span>
+        <span>
+          <span class="ds-app-brand__name">דטהסקופ</span>
+          <span class="ds-app-brand__tagline">שירותי מחקר ומידענות</span>
+        </span>
+      </a>
+
+      <nav class="ds-app-nav" data-app-navigation aria-label="ניווט ראשי">
+        <a href="../index.html">דף הבית</a>
+        <a href="#" aria-current="page">המשימה</a>
+        <a href="../handbook/index.html">מדריך המידען</a>
+      </nav>
+
+      <div class="ds-header-actions">
+        <button class="ds-icon-button" type="button" data-theme-toggle aria-label="עברו למצב כהה">☾</button>
+        <button class="ds-icon-button ds-mobile-menu-button" type="button"
+                data-mobile-menu aria-label="פתחו תפריט"
+                aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ds-course-shell">
+    <aside class="ds-course-sidebar" aria-label="התקדמות ביחידה">
+      <p class="ds-sidebar-label">יחידה 00</p>
+
+      <div class="ds-unit-progress">
+        <div class="ds-unit-progress__meta">
+          <span>התקדמות</span>
+          <span data-progress-text>0%</span>
+        </div>
+        <div class="ds-progress-track">
+          <div class="ds-progress-bar" data-reading-progress></div>
+        </div>
+      </div>
+
+      <nav class="ds-unit-navigation" aria-label="שלבי היחידה">
+        <a href="#section-1" data-step-link>
+          <span class="ds-unit-navigation__number">1</span>
+          <span>תדריך</span>
+        </a>
+        <a href="#section-2" data-step-link>
+          <span class="ds-unit-navigation__number">2</span>
+          <span>הלקוח</span>
+        </a>
+        <a href="#section-3" data-step-link>
+          <span class="ds-unit-navigation__number">3</span>
+          <span>לומדים</span>
+        </a>
+        <a href="#section-4" data-step-link>
+          <span class="ds-unit-navigation__number">4</span>
+          <span>מתרגלים</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main id="main-content" class="ds-course-main">
+      <div class="ds-course-main__inner">
+        <header class="ds-unit-heading">
+          <p class="ds-unit-kicker">יחידה 00</p>
+          <h1>שם היחידה</h1>
+          <p class="ds-unit-heading__lead">תיאור קצר שמסביר לסטודנטים מה יעשו ולמה.</p>
+        </header>
+
+        <section id="section-1" class="ds-content-section" data-progress-section>
+          <span class="ds-section-number">שלב 1</span>
+          <h2>תדריך</h2>
+          <p>תוכן.</p>
+        </section>
+
+        <section id="section-2" class="ds-content-section" data-progress-section>
+          <span class="ds-section-number">שלב 2</span>
+          <h2>הלקוח</h2>
+          <datascope-client
+            client="שם הלקוח"
+            background="רקע"
+            decision="החלטה"
+            task="משימה"
+            deliverable="תוצר">
+          </datascope-client>
+        </section>
+
+        <section id="section-3" class="ds-content-section" data-progress-section>
+          <span class="ds-section-number">שלב 3</span>
+          <h2>לומדים</h2>
+          <p>תוכן.</p>
+        </section>
+
+        <section id="section-4" class="ds-content-section" data-progress-section>
+          <span class="ds-section-number">שלב 4</span>
+          <h2>מתרגלים</h2>
+          <p>תוכן.</p>
+        </section>
+
+        <nav class="ds-next-step" aria-label="ניווט בין יחידות">
+          <a href="#">
+            <small>הקודם</small>
+            <strong>שם היחידה הקודמת</strong>
+          </a>
+          <a href="#">
+            <small>הבא</small>
+            <strong>שם היחידה הבאה</strong>
+          </a>
+        </nav>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
