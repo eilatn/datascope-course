@@ -1,0 +1,17 @@
+:{$PORT:8080} {
+	root * /srv
+
+	encode zstd gzip
+
+	@health path /health
+	respond @health "OK" 200
+
+	header {
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		X-Frame-Options "SAMEORIGIN"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+	}
+
+	file_server
+}
