@@ -5,104 +5,162 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="דטהסקופ — סביבת הלמידה של הקורס מידענות רב־תחומית">
   <title>דטהסקופ | שירותי מחקר ומידענות</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <script src="assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="assets/css/framework.css">
+  <link rel="stylesheet" href="assets/css/home.css">
 </head>
-<body>
+<body class="show-section-labels">
   <a class="skip-link" href="#main-content">דלגו לתוכן המרכזי</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">◉</div>
-        <div>
-          <p class="brand-name">דטהסקופ</p>
-          <p class="brand-tagline">שירותי מחקר ומידענות</p>
-        </div>
-      </div>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">תפריט</button>
-      <nav id="primary-navigation" class="primary-navigation" aria-label="ניווט ראשי">
-        <a href="#workflow">תהליך העבודה</a>
-        <a href="#first-unit">היחידה הראשונה</a>
-        <a href="#principles">עקרונות</a>
+  <header class="site-header" id="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home-00-course-intro" aria-label="דטהסקופ — דף הבית">
+        <span class="brand-mark" aria-hidden="true">◉</span>
+        <span>
+          <strong>דטהסקופ</strong>
+          <small>שירותי מחקר ומידענות</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="ניווט ראשי">
+        <a href="#home-00-course-intro">לפני שמתחילים</a>
+        <a href="#home-03-workflow">תהליך העבודה</a>
+        <a href="#home-04-unit-preview">היחידה הראשונה</a>
+        <a href="#home-05-principles">עקרונות</a>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="course-label">מידענות רב־תחומית (מקוון)</p>
-          <h1>ברוכים הבאים לדטהסקופ</h1>
-          <p class="hero-lead">הצטרפתם לצוות של חברת מחקר ומידענות. בכל יחידה תקבלו תיק לקוח חדש ותסייעו ללקוח לקבל החלטה מבוססת מידע.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#first-unit">לתדריך הראשון</a>
-            <a class="button button-secondary" href="#workflow">איך עובדים בדטהסקופ?</a>
-          </div>
+    <!-- ========================================================= -->
+    <!-- SECTION: HOME-00 | COURSE SIMULATION INTRODUCTION         -->
+    <!-- PURPOSE: Explain the professional simulation              -->
+    <!-- ========================================================= -->
+    <section id="home-00-course-intro" class="page-section course-intro" data-section="HOME-00">
+      <span class="section-dev-label" aria-hidden="true">HOME-00</span>
+      <div class="shell narrow">
+        <p class="eyebrow">מידענות רב־תחומית (מקוון)</p>
+        <h1>לפני שמתחילים</h1>
+        <div class="intro-copy">
+          <p><strong>סטודנטים יקרים,</strong></p>
+          <p>ברוכים הבאים לקורס <strong>מידענות רב־תחומית</strong>.</p>
+          <p>הקורס מדמה את עבודת המידענות הארגונית בפועל. במהלך הקורס תיכנסו לתפקיד של מידענים מתחילים בחברת <strong>דטהסקופ</strong>, חברה המספקת שירותי מחקר ומידענות ללקוחות ממגוון תחומים.</p>
+          <p>התרגילים והמשימות שתקבלו נעשים במסגרת של ״עבודתכם״ בחברה. תקבלו תיקי לקוח, תנתחו את צורכי הלקוח, תגדירו שאלות מחקר, תאתרו מידע ממקורות מגוונים, תעריכו את אמינותו ותציגו המלצות מקצועיות המבוססות על ממצאיכם.</p>
+          <p class="emphasis">למרות המסגרת הסיפורית, תהליכי העבודה, הכלים והשיטות שתלמדו מבוססים על עבודת המידענות כפי שהיא מתבצעת בארגונים בפועל.</p>
         </div>
+        <a class="text-link" href="#home-01-datascope-welcome">המשיכו אל סביבת העבודה של דטהסקופ ←</a>
+      </div>
+    </section>
 
-        <aside class="brief-card">
-          <p class="eyebrow">תיק עובד חדש</p>
-          <h2>התפקיד שלכם</h2>
-          <dl>
-            <div><dt>תפקיד</dt><dd>מידען מתחיל</dd></div>
-            <div><dt>מטרה</dt><dd>לפתור בעיות מידע של לקוחות</dd></div>
-            <div><dt>תוצר</dt><dd>המלצה מקצועית מבוססת מקורות</dd></div>
-          </dl>
+    <!-- ========================================================= -->
+    <!-- SECTION: HOME-01 | DATASCOPE WELCOME                      -->
+    <!-- PURPOSE: Transition into the company simulation           -->
+    <!-- ========================================================= -->
+    <section id="home-01-datascope-welcome" class="page-section welcome-section" data-section="HOME-01">
+      <span class="section-dev-label" aria-hidden="true">HOME-01</span>
+      <div class="shell welcome-grid">
+        <div>
+          <p class="eyebrow">הודעת קבלה</p>
+          <h2>ברוכים הבאים לתוכנית ההכשרה של דטהסקופ</h2>
+          <p><strong>מועמדים יקרים, ברכותינו על הצטרפותכם לחברה.</strong></p>
+          <p>דטהסקופ היא חברת מחקר ומידענות הפועלת בזירה הבינלאומית ומספקת שירותי מחקר, איסוף, ניתוח והערכת מידע ללקוחות מתחומי ההייטק, התעשייה, החדשנות והמדיניות הציבורית.</p>
+          <p>החברה עוסקת בעבודה עם מקורות מידע גלויים — <span lang="en" dir="ltr">Open Source Intelligence (OSINT)</span> — כדי לספק ללקוחותיה תובנות שיסייעו להם לקבל החלטות מושכלות.</p>
+          <p>במהלך ההכשרה תעבדו מול חברות הייטק, עמותות, גופי ממשל ויזמים פרטיים. בכל יחידה תקבלו תיק לקוח חדש ותידרשו להפיק המלצה מקצועית המבוססת על תהליך מחקר שיטתי.</p>
+          <p class="welcome-signoff"><strong>בהצלחה!<br>הנהלת דטהסקופ</strong></p>
+        </div>
+        <aside class="brief-card" aria-label="מה תעשו במהלך ההכשרה">
+          <p class="card-kicker">במהלך ההכשרה</p>
+          <h3>מה תעשו?</h3>
+          <ul class="check-list">
+            <li>תבינו את צורכי הלקוח</li>
+            <li>תנסחו שאלת מחקר</li>
+            <li>תאתרו ותעריכו מקורות</li>
+            <li>תנתחו ממצאים</li>
+            <li>תגבשו המלצה מקצועית</li>
+          </ul>
         </aside>
       </div>
     </section>
 
-    <section id="workflow" class="section">
-      <div class="container">
+    <!-- ========================================================= -->
+    <!-- SECTION: HOME-02 | EMPLOYEE DOSSIER                       -->
+    <!-- PURPOSE: Define the learner's role in the simulation      -->
+    <!-- ========================================================= -->
+    <section id="home-02-employee-dossier" class="page-section dossier-section" data-section="HOME-02">
+      <span class="section-dev-label" aria-hidden="true">HOME-02</span>
+      <div class="shell">
+        <p class="eyebrow">תיק עובד חדש</p>
+        <h2>התפקיד שלכם</h2>
+        <dl class="dossier-grid">
+          <div><dt>תפקיד</dt><dd>מידען/ית מתחיל/ה</dd></div>
+          <div><dt>מטרה</dt><dd>לפתור בעיות מידע של לקוחות</dd></div>
+          <div><dt>תוצר</dt><dd>המלצה מקצועית מבוססת מקורות</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION: HOME-03 | DATASCOPE WORKFLOW                     -->
+    <!-- PURPOSE: Explain the organizational research workflow     -->
+    <!-- ========================================================= -->
+    <section id="home-03-workflow" class="page-section workflow-section" data-section="HOME-03">
+      <span class="section-dev-label" aria-hidden="true">HOME-03</span>
+      <div class="shell">
         <p class="eyebrow">שיטת העבודה</p>
         <h2>מידען לא מתחיל ממאגר מידע</h2>
-        <p class="section-intro">העבודה מתחילה בהבנת הלקוח וההחלטה שעליו לקבל.</p>
-        <ol class="workflow" aria-label="תהליך עבודת המידען">
-          <li><span>1</span>לקוח</li>
-          <li><span>2</span>צורך</li>
-          <li><span>3</span>שאלת מחקר</li>
-          <li><span>4</span>מקורות</li>
-          <li><span>5</span>איסוף</li>
-          <li><span>6</span>הערכה</li>
-          <li><span>7</span>ניתוח</li>
-          <li><span>8</span>המלצה</li>
+        <p class="section-lead">העבודה מתחילה בהבנת הלקוח וההחלטה שעליו לקבל.</p>
+        <ol class="workflow-grid">
+          <li><span>01</span><strong>לקוח</strong></li>
+          <li><span>02</span><strong>צורך</strong></li>
+          <li><span>03</span><strong>שאלת מחקר</strong></li>
+          <li><span>04</span><strong>מקורות</strong></li>
+          <li><span>05</span><strong>איסוף</strong></li>
+          <li><span>06</span><strong>הערכה</strong></li>
+          <li><span>07</span><strong>ניתוח</strong></li>
+          <li><span>08</span><strong>המלצה</strong></li>
         </ol>
       </div>
     </section>
 
-    <section id="first-unit" class="section section-muted">
-      <div class="container unit-card">
+    <!-- ========================================================= -->
+    <!-- SECTION: HOME-04 | UNIT PREVIEW                           -->
+    <!-- PURPOSE: Introduce the first learning unit                -->
+    <!-- ========================================================= -->
+    <section id="home-04-unit-preview" class="page-section unit-section" data-section="HOME-04">
+      <span class="section-dev-label" aria-hidden="true">HOME-04</span>
+      <div class="shell unit-card">
         <div>
           <p class="eyebrow">היחידה הראשונה</p>
           <h2>איך חושב מידען ארגוני?</h2>
           <p>נבחן את המעבר מעבודת ספרייה לפתרון בעיות מידע של ארגונים, נכיר סוגי מקורות ונלמד כיצד בוחנים את איכותם.</p>
         </div>
-        <div class="status-box">
-          <strong>בבנייה</strong>
-          <span>יחידת המבוא תהיה התבנית לכל היחידות הבאות.</span>
+        <div class="unit-status">
+          <span>בבנייה</span>
+          <p>יחידת המבוא תהיה התבנית לכל היחידות הבאות.</p>
         </div>
       </div>
     </section>
 
-    <section id="principles" class="section">
-      <div class="container">
+    <!-- ========================================================= -->
+    <!-- SECTION: HOME-05 | DATASCOPE PRINCIPLES                   -->
+    <!-- PURPOSE: State the core learning principles              -->
+    <!-- ========================================================= -->
+    <section id="home-05-principles" class="page-section principles-section" data-section="HOME-05">
+      <span class="section-dev-label" aria-hidden="true">HOME-05</span>
+      <div class="shell">
         <p class="eyebrow">עקרונות דטהסקופ</p>
         <h2>מה יאפיין את הלמידה?</h2>
-        <div class="cards">
-          <article class="info-card"><h3>לקוח לפני כלי</h3><p>נגדיר את הצורך לפני שנבחר מאגר, אתר או שיטת חיפוש.</p></article>
-          <article class="info-card"><h3>הערכה לפני מסקנה</h3><p>נבדוק סמכות, עדכניות, הקשר ומגבלות לפני שנשתמש במידע.</p></article>
-          <article class="info-card"><h3>המלצה ולא רשימת נתונים</h3><p>העבודה מסתיימת בהמלצה מנומקת שמסייעת לקבל החלטה.</p></article>
+        <div class="principles-grid">
+          <article><span aria-hidden="true">01</span><h3>לקוח לפני כלי</h3><p>נגדיר את הצורך לפני שנבחר מאגר, אתר או שיטת חיפוש.</p></article>
+          <article><span aria-hidden="true">02</span><h3>הערכה לפני מסקנה</h3><p>נבדוק סמכות, עדכניות, הקשר ומגבלות לפני שנשתמש במידע.</p></article>
+          <article><span aria-hidden="true">03</span><h3>המלצה ולא רשימת נתונים</h3><p>העבודה מסתיימת בהמלצה מנומקת שמסייעת לקבל החלטה.</p></article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p><strong>דטהסקופ</strong> — שירותי מחקר ומידענות</p>
-      <p>סביבת הלמידה של הקורס מידענות רב־תחומית (מקוון)</p>
+  <footer class="site-footer" id="site-footer">
+    <div class="shell">
+      <strong>דטהסקופ — שירותי מחקר ומידענות</strong>
+      <span>סביבת הלמידה של הקורס מידענות רב־תחומית (מקוון)</span>
     </div>
   </footer>
 </body>

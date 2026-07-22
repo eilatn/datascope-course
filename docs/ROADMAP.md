@@ -1,34 +1,13 @@
-# מפת דרכים
+# Datascope Roadmap
 
-## Sprint 1 — יסודות
+## Completed
+- Sprint 1 — Foundation
+- Sprint 2 — Components
+- Sprint 3 — Framework
+- Sprint 4 — Deployment
+- Sprint 5 — First Impressions
 
-- [x] מבנה מאגר
-- [x] מסמכי יסוד
-- [x] דף נחיתה
-- [ ] שילוב הלוגו
-- [ ] נעילת צבעים
-- [ ] בדיקת מובייל ונגישות
-
-## Sprint 2 — איך חושב מידען ארגוני?
-
-- [ ] תדריך פתיחה
-- [ ] מעבר מספרנות למידענות ארגונית
-- [ ] מהי מידענות ארגונית
-- [ ] מה אינה מידענות
-- [ ] סוגי מקורות
-- [ ] הערכת מקורות
-- [ ] פעילות אינטראקטיבית
-- [ ] בדיקת ידע
-- [ ] תיק לקוח ראשון
-
-## Sprint 3 — מידע עסקי
-
-- [ ] מודעות דרושים
-- [ ] המלצה על כנס
-- [ ] Startup Nation Finder
-
-## Sprint 4 — מידע ממשלתי וציבורי
-
-- [ ] GuideStar
-- [ ] הלמ"ס
-- [ ] רשות הפטנטים ו-WIPO
+## Next
+- Sprint 6 — Unit 0 content and interaction
+- Sprint 7 — Analyst Handbook
+- Sprint 8 — Component gallery and testing sandbox
