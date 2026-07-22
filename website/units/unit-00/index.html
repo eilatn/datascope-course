@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="יחידת המבוא של דטהסקופ: איך חושב מידען ארגוני?">
+  <title>איך חושב מידען ארגוני? | דטהסקופ</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/unit.css">
+  <script src="../../assets/js/main.js" defer></script>
+  <script src="../../assets/js/components.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">דלגו לתוכן המרכזי</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand brand-link" href="../../index.html" aria-label="חזרה לדף הבית של דטהסקופ">
+        <div class="brand-mark" aria-hidden="true">◉</div>
+        <div>
+          <p class="brand-name">דטהסקופ</p>
+          <p class="brand-tagline">שירותי מחקר ומידענות</p>
+        </div>
+      </a>
+      <nav class="primary-navigation" aria-label="ניווט ביחידה">
+        <a href="#brief">התדריך</a>
+        <a href="#workflow">התהליך</a>
+        <a href="#first-case">תיק הלקוח</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero unit-hero">
+      <div class="container">
+        <p class="course-label">יחידת מבוא</p>
+        <h1>איך חושב מידען ארגוני?</h1>
+        <p class="hero-lead">
+          ספרנים ומידענים יודעים לאתר מידע. בעבודה ארגונית נדרש צעד נוסף:
+          להבין איזו החלטה הלקוח צריך לקבל, ורק אחר כך לתכנן את החקירה.
+        </p>
+      </div>
+    </section>
+
+    <section id="brief" class="section">
+      <div class="container reading-column">
+        <p class="eyebrow">תדריך פתיחה</p>
+        <h2>הטלפון הראשון שלכם בדטהסקופ</h2>
+        <p>
+          לקוחה מתקשרת ומבקשת: “תמצאו לי מידע על כנסים מקצועיים בחו״ל”.
+          אפשר לפתוח מיד מנוע חיפוש ולהתחיל לאסוף קישורים. אבל לפני כן חסר
+          לנו המידע החשוב ביותר: מה הלקוחה מנסה להחליט?
+        </p>
+        <div class="prompt-box">
+          <strong>חשבו לפני שאתם ממשיכים:</strong>
+          <p>אילו שלוש שאלות הייתם שואלים את הלקוחה לפני תחילת החיפוש?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section section-muted">
+      <div class="container">
+        <datascope-workflow active="1"></datascope-workflow>
+      </div>
+    </section>
+
+    <section id="first-case" class="section">
+      <div class="container">
+        <datascope-client
+          client="חברת תוכנה ישראלית"
+          background="החברה מעוניינת להרחיב פעילות באירופה וליצור קשרים עם שותפים עסקיים."
+          decision="באיזה כנס בינלאומי כדאי להשתתף בשנה הקרובה?"
+          task="לתכנן את חקירת המידע לפני תחילת האיסוף."
+          deliverable="רשימת צרכי מידע, מקורות אפשריים וסדר עבודה מוצע.">
+        </datascope-client>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container reading-column">
+        <p class="eyebrow">העיקרון הראשון</p>
+        <h2>בקשת חיפוש אינה בהכרח שאלת מחקר</h2>
+        <p>
+          “מצאו כנסים” היא בקשת חיפוש רחבה. כדי להפוך אותה לשאלת מחקר,
+          צריך לברר מהו התחום המקצועי, אילו מדינות רלוונטיות, מה מטרת
+          ההשתתפות, מה התקציב, מי הקהל הרצוי ומהם לוחות הזמנים.
+        </p>
+        <p>
+          רק לאחר בירור זה נוכל להגדיר קריטריונים להשוואה ולבחור מקורות
+          מתאימים.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="source-grid">
+          <datascope-source-card
+            name="אתר הכנס"
+            type="מקור ראשוני"
+            use="לבדיקת תאריכים, תוכנית, מחיר, קהל יעד ומארגנים."
+            strength="המידע הרשמי והישיר ביותר על האירוע."
+            limitation="האתר נועד לשיווק הכנס ולכן אינו מקור ניטרלי.">
+          </datascope-source-card>
+
+          <datascope-source-card
+            name="דוחות או ביקורות משתתפים"
+            type="מקור משני"
+            use="להבנת החוויה בפועל, איכות הקהל והערך המקצועי."
+            strength="מוסיף נקודת מבט שאינה מגיעה מהמארגנים."
+            limitation="עשוי להיות סובייקטיבי או לא עדכני.">
+          </datascope-source-card>
+
+          <datascope-source-card
+            name="מאגר כנסים"
+            type="מקור גילוי"
+            use="לאיתור רשימה ראשונית של אירועים אפשריים."
+            strength="מאפשר סקירה מהירה של אפשרויות רבות."
+            limitation="הפרטים עשויים להיות חלקיים ויש לאמתם במקור הרשמי.">
+          </datascope-source-card>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <datascope-recommendation
+          recommendation="לא להתחיל באיסוף כנסים לפני הגדרת מטרת ההשתתפות וקריטריוני ההשוואה."
+          evidence="אותו כנס עשוי להתאים ליצירת שותפויות אך לא לגיוס לקוחות, או להפך."
+          confidence="גבוהה"
+          caveat="לאחר בירור הצורך ייתכן שיהיה צורך לעדכן את שאלת המחקר.">
+        </datascope-recommendation>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <datascope-takeaway>
+          <p>
+            לפני פתיחת מאגר או מנוע חיפוש, הגדירו מי הלקוח, איזו החלטה עליו
+            לקבל ומהו המידע שחסר לו. כלי החיפוש מגיע רק לאחר מכן.
+          </p>
+        </datascope-takeaway>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>דטהסקופ</strong> — שירותי מחקר ומידענות</p>
+      <p>יחידת מבוא: איך חושב מידען ארגוני?</p>
+    </div>
+  </footer>
+</body>
+</html>

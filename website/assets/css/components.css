@@ -1,0 +1,185 @@
+datascope-client,
+datascope-workflow,
+datascope-source-card,
+datascope-recommendation,
+datascope-takeaway {
+  display: block;
+}
+
+.ds-component-label {
+  margin-bottom: .4rem;
+  color: var(--secondary, #1473e6);
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .03em;
+}
+
+.ds-client-card,
+.ds-workflow-block,
+.ds-source-card,
+.ds-recommendation,
+.ds-takeaway {
+  border: 1px solid var(--border, #d9e2ec);
+  border-radius: 1.25rem;
+  background: var(--surface, #fff);
+  box-shadow: var(--shadow, 0 12px 32px rgba(16,42,67,.10));
+}
+
+.ds-client-card,
+.ds-workflow-block,
+.ds-recommendation,
+.ds-takeaway {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.ds-client-card h2,
+.ds-workflow-block h2,
+.ds-recommendation h2,
+.ds-takeaway h2 {
+  margin: 0;
+}
+
+.ds-client-grid,
+.ds-recommendation dl,
+.ds-source-card dl {
+  margin: 1.4rem 0 0;
+}
+
+.ds-client-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.ds-client-grid div,
+.ds-recommendation dl div,
+.ds-source-card dl div {
+  padding: 1rem;
+  border: 1px solid var(--border, #d9e2ec);
+  border-radius: .85rem;
+  background: var(--background, #f5f8fc);
+}
+
+.ds-client-grid dt,
+.ds-recommendation dt,
+.ds-source-card dt {
+  color: var(--muted, #52606d);
+  font-size: .84rem;
+  font-weight: 800;
+}
+
+.ds-client-grid dd,
+.ds-recommendation dd,
+.ds-source-card dd {
+  margin: .25rem 0 0;
+}
+
+.ds-workflow {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: .65rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ds-workflow li {
+  min-height: 108px;
+  padding: .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--border, #d9e2ec);
+  border-radius: .85rem;
+  background: #fff;
+}
+
+.ds-workflow li span {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--background, #f5f8fc);
+  color: var(--muted, #52606d);
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.ds-workflow li.is-complete {
+  background: #edf8f2;
+  border-color: #b8dfc9;
+}
+
+.ds-workflow li.is-active {
+  border: 2px solid var(--secondary, #1473e6);
+  background: #edf5ff;
+}
+
+.ds-workflow li.is-active span {
+  background: var(--secondary, #1473e6);
+  color: #fff;
+}
+
+.ds-source-card {
+  padding: 1.35rem;
+}
+
+.ds-source-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.ds-source-heading h3 {
+  margin: 0;
+}
+
+.ds-badge {
+  padding: .3rem .65rem;
+  border-radius: 999px;
+  background: #edf5ff;
+  color: #0c5db8;
+  font-size: .78rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ds-source-card dl {
+  display: grid;
+  gap: .65rem;
+}
+
+.ds-recommendation {
+  border-inline-start: 6px solid var(--secondary, #1473e6);
+}
+
+.ds-recommendation dl {
+  display: grid;
+  gap: .75rem;
+}
+
+.ds-takeaway {
+  background: linear-gradient(135deg, #102a43, #174a73);
+  color: #fff;
+  border: 0;
+}
+
+.ds-takeaway h2,
+.ds-takeaway .ds-component-label {
+  color: #fff;
+}
+
+.ds-takeaway-content > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .ds-workflow { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 680px) {
+  .ds-client-grid { grid-template-columns: 1fr; }
+  .ds-workflow { grid-template-columns: repeat(2, 1fr); }
+}
