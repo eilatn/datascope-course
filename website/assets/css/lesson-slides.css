@@ -460,3 +460,107 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* SPRINT 9.1 — extended text-slide components */
+.lesson-applications {
+  margin-top: 24px;
+  padding-top: 8px;
+}
+.lesson-application-grid,
+.lesson-comparison-grid,
+.lesson-term-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+.lesson-application-card,
+.lesson-comparison-grid section,
+.lesson-term-grid > div {
+  padding: 16px 18px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 12px;
+  background: #fff;
+}
+.lesson-application-card h3,
+.lesson-comparison-grid h2 {
+  margin-top: 0;
+}
+.lesson-term-grid > div {
+  display: grid;
+  gap: 4px;
+}
+.lesson-term-grid strong {
+  color: var(--lesson-accent-dark);
+}
+.lesson-term-grid span {
+  color: var(--lesson-muted);
+  font-size: .93rem;
+}
+.lesson-video-block {
+  margin-top: 24px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: minmax(220px, .7fr) minmax(320px, 1.3fr);
+  gap: 18px;
+  align-items: center;
+  border: 1px solid var(--lesson-line);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--lesson-accent-soft) 45%, #fff);
+}
+.lesson-video-copy h2 {
+  margin-top: 0;
+}
+.lesson-video-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #0d2035;
+}
+.lesson-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.lesson-warning {
+  margin: 20px 0;
+  padding: 18px 20px;
+  border: 1px solid #e8c6c6;
+  border-inline-start: 5px solid #a84747;
+  border-radius: 12px;
+  background: #fff8f8;
+}
+.lesson-warning h2 {
+  margin-top: 0;
+  color: #863737;
+}
+.lesson-primary-link {
+  margin-top: 22px;
+  min-height: 46px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: var(--lesson-accent);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .lesson-video-block {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .lesson-application-grid,
+  .lesson-comparison-grid,
+  .lesson-term-grid {
+    grid-template-columns: 1fr;
+  }
+}
