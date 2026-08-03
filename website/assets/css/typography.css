@@ -1,0 +1,33 @@
+:root {
+  --font-ui: Calibri, Carlito, Aptos, Arial, sans-serif;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-ui) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+small,
+strong,
+label,
+summary,
+dt,
+dd,
+li,
+th,
+td {
+  font-family: inherit;
+}

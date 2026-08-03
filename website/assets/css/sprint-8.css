@@ -1,3 +1,5 @@
+@import url("./typography.css");
+
 :root {
   --ink: #0b1f33;
   --muted: #5e6c7b;
@@ -181,4 +183,150 @@ footer { background: #061724; color: #b8c9d8; }
   .card, .hero-panel { padding: 22px; }
   .module { grid-template-columns: 40px 1fr; }
   .module-status { grid-column: 2; }
+}
+
+/* =========================================================
+   HOME-00 | DAVID YELLIN INSTITUTIONAL INTRODUCTION
+   ========================================================= */
+body.institutional-home {
+  --college-accent: #1bcfc0;
+  --college-accent-dark: #087f78;
+  --college-ink: #18323b;
+  --college-paper: #f5fcfb;
+  --college-line: rgba(27, 207, 192, .42);
+  color: var(--college-ink);
+  background: var(--college-paper);
+}
+
+.institutional-home .topbar {
+  background: rgba(245, 252, 251, .96);
+  border-bottom-color: var(--college-line);
+}
+
+.institutional-home .institution-lockup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.institutional-home .institution-logo {
+  width: 178px;
+  height: 54px;
+  display: block;
+  object-fit: contain;
+  object-position: right center;
+}
+
+.institutional-home .page-code {
+  color: #075e58;
+  background: rgba(27, 207, 192, .10);
+  border-color: rgba(27, 207, 192, .48);
+}
+
+.institutional-home .progress-bar {
+  background: var(--college-accent);
+}
+
+.institutional-home .hero {
+  color: var(--college-ink);
+  background:
+    radial-gradient(circle at 14% 18%, rgba(27, 207, 192, .18), transparent 34%),
+    linear-gradient(145deg, #ffffff 0%, #edf9f7 58%, #dff6f2 100%);
+  border-bottom: 1px solid var(--college-line);
+}
+
+.institutional-home .hero::after {
+  opacity: .23;
+  background-image:
+    linear-gradient(rgba(27, 207, 192, .20) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 207, 192, .20) 1px, transparent 1px);
+}
+
+.institutional-home .hero-inner {
+  min-height: 500px;
+}
+
+.institutional-home .eyebrow {
+  max-width: 850px;
+  color: #086d67;
+  letter-spacing: 0;
+  font-size: .94rem;
+  line-height: 1.55;
+}
+
+.institutional-home h1,
+.institutional-home h2,
+.institutional-home h3 {
+  color: var(--college-ink);
+}
+
+.institutional-home .hero-lead {
+  color: #3f5c63;
+}
+
+.institutional-home .hero-panel,
+.institutional-home .card,
+.institutional-home .callout {
+  outline: 1px solid rgba(27, 207, 192, .18);
+  outline-offset: 3px;
+}
+
+.institutional-home .hero-panel {
+  background: rgba(255, 255, 255, .72);
+  border-color: var(--college-line);
+  box-shadow: 0 24px 55px rgba(16, 92, 86, .10);
+}
+
+.institutional-home .hero-panel .stat {
+  border-bottom-color: rgba(8, 127, 120, .16);
+}
+
+.institutional-home .hero-panel span {
+  color: #547078;
+}
+
+.institutional-home .btn-primary {
+  color: #083c39;
+  background: var(--college-accent);
+  border-color: var(--college-accent);
+}
+
+.institutional-home .kicker,
+.institutional-home .card-icon {
+  color: var(--college-accent-dark);
+}
+
+.institutional-home .card-icon {
+  background: rgba(27, 207, 192, .13);
+}
+
+.institutional-home .callout-info {
+  background: #e9f9f7;
+  border-color: var(--college-line);
+}
+
+.institutional-home .callout-symbol {
+  color: var(--college-accent-dark);
+  border: 1px solid var(--college-line);
+}
+
+.institutional-home .page-nav {
+  border-top-color: var(--college-line);
+}
+
+.institutional-home footer {
+  color: #d8efec;
+  background: #153a3d;
+  border-top: 3px solid var(--college-accent);
+}
+
+@media (max-width: 620px) {
+  .institutional-home .institution-logo {
+    width: 132px;
+    height: 44px;
+  }
+  .institutional-home .eyebrow {
+    font-size: .82rem;
+  }
 }
