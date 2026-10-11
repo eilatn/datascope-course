@@ -1,0 +1,99 @@
+/* DataScope shared course navigation — Sprint 14 navigation patch.
+   Every section uses the same structure; only active-section color differs. */
+.course-top-nav, .course-top-nav * { box-sizing: border-box; }
+.course-top-nav {
+  --course-nav-ink: #15314a;
+  --course-nav-line: #d8e4ee;
+  --course-active: #28679f;
+  --course-active-soft: #eaf3fb;
+  display: block;
+  margin: 0;
+  border-bottom: 1px solid var(--course-nav-line);
+  background: #fff;
+  color: var(--course-nav-ink);
+  font-family: Calibri, Carlito, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  direction: rtl;
+  text-align: right;
+}
+.course-top-nav[data-course-section="business"] {
+  --course-active: #0d6b70;
+  --course-active-soft: #eaf5f3;
+}
+.course-top-nav[data-course-section="government"] {
+  --course-active: #76486c;
+  --course-active-soft: #f6edf4;
+}
+.course-top-nav__inner {
+  width: min(100% - 32px, 1180px);
+  min-height: 56px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.course-top-nav__label {
+  flex: 0 0 auto;
+  color: #526b80;
+  font-size: .87rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.course-top-nav__links {
+  display: flex;
+  direction: rtl;
+  flex-direction: row; /* first link is at the right, then progresses left */
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+.course-top-nav__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 37px;
+  padding: 7px 14px;
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+  background: #fff;
+  color: #314c63;
+  font-size: .89rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  text-align: center;
+  white-space: normal;
+}
+.course-top-nav__links a:hover {
+  background: #f2f7fb;
+  border-color: #a7c0d3;
+}
+.course-top-nav__links a[aria-current="page"] {
+  color: var(--course-active);
+  border-color: var(--course-active);
+  background: var(--course-active-soft);
+  font-weight: 800;
+}
+.course-top-nav__links a:focus-visible {
+  outline: 3px solid #e6aa4e;
+  outline-offset: 2px;
+}
+/* The Academy slide viewer is a grid with header/stage/footer; the added
+   navigation requires an explicit fourth row. */
+.lesson-app:has(> .course-top-nav) {
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+}
+.lesson-app > .course-top-nav { grid-row: 2; }
+.lesson-app > .lesson-stage { grid-row: 3; }
+.lesson-app > .lesson-footer { grid-row: 4; }
+@media (max-width: 650px) {
+  .course-top-nav__inner {
+    width: min(100% - 20px, 1180px);
+    padding-block: 9px;
+    display: block;
+  }
+  .course-top-nav__label { display: block; margin-bottom: 7px; font-size: .78rem; }
+  .course-top-nav__links { direction: rtl; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
+  .course-top-nav__links a { padding: 7px 5px; min-height: 42px; font-size: .76rem; }
+}
