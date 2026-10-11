@@ -1,0 +1,148 @@
+/* DataScope unified site shell — same white header across all 12 course pages.
+   Source of truth for logo: /website/assets/img/datascope-logo.png
+   Section-specific accents stay in each unit's own stylesheet. */
+
+:root { --ds-ink: #10263b; --ds-muted: #546a7f; --ds-line: #dce6ef; }
+body { background: #fff !important; }
+.ds-header, .ds-header * { box-sizing: border-box; }
+.ds-header {
+  display: block;
+  width: 100%;
+  background: #fff !important;
+  color: var(--ds-ink);
+  border-top: 1px solid #e8edf2;
+  border-bottom: 1px solid var(--ds-line);
+  font-family: Calibri, Carlito, Arial, sans-serif;
+  line-height: 1.4;
+  direction: rtl;
+  text-align: right;
+}
+.ds-header__inner {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 93px;
+  margin-inline: auto;
+  padding: 13px clamp(16px, 3.8vw, 66px);
+  display: grid;
+  grid-template-columns: minmax(210px, 1fr) minmax(240px, 1.4fr) minmax(115px, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+.ds-header__brand {
+  justify-self: start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  text-decoration: none !important;
+  color: var(--ds-ink) !important;
+}
+.ds-header__brand:hover { text-decoration: none; }
+.ds-header__logo {
+  display: block;
+  width: 76px;
+  height: 51px;
+  flex: 0 0 76px;
+  object-fit: contain;
+}
+.ds-header__brand-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ds-header__brand-copy strong { display: block; color: #0a2136; font-size: 1.08rem; line-height: 1.25; font-weight: 800; }
+.ds-header__brand-copy small { display: block; color: var(--ds-muted); font-size: .83rem; font-weight: 400; line-height: 1.35; }
+.ds-header__course {
+  justify-self: center;
+  margin: 0;
+  color: #596f86;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.ds-header__course bdi { white-space: nowrap; }
+.ds-header__home {
+  justify-self: end;
+  text-decoration: none !important;
+  white-space: nowrap;
+  padding: 10px 17px;
+  border: 1px solid #bdd4ec;
+  border-radius: 12px;
+  background: #fff;
+  color: #0d253a !important;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
+}
+.ds-header__home:hover { background: #edf6fe; border-color: #7da9d8; }
+.ds-header a:focus-visible, .course-top-nav a:focus-visible { outline: 3px solid #e6aa4e; outline-offset: 3px; }
+
+/* The course navigation uses the same white canvas and full-width alignment everywhere. */
+.course-top-nav { background: #fff !important; }
+.course-top-nav__inner {
+  width: 100%;
+  max-width: 1600px;
+  padding-inline: clamp(16px, 3.8vw, 66px);
+}
+
+/* Local subunit navs remain distinct through teal/plum active states. */
+.nav-wrap { background: #fff !important; }
+
+/* Restore a white course landing page (the introductory Academy used a full dark hero). */
+.academy-intro { background: #fff !important; color: var(--ds-ink) !important; padding-block: clamp(36px, 4.2vw, 65px) clamp(28px, 3vw, 45px); }
+.academy-intro h1 { color: var(--ds-ink) !important; font-size: clamp(2.15rem, 4.4vw, 3.6rem); }
+.academy-intro .academy-eyebrow { color: #28679f; }
+.academy-lead { color: #48647c !important; }
+.academy-company-box { border-color: #cbddeb; background: #f5f9fd; color: var(--ds-ink); }
+.academy-company-box img { filter: none; }
+.academy-outline { border-color: #cbddeb; background: #f5f9fd; color: var(--ds-ink); backdrop-filter: none; }
+.academy-outline h2 { color: var(--ds-ink); }
+.academy-outline li { border-color: #d8e5f0; }
+.academy-units { background: #fff; }
+.academy-footer { background: #fff; color: #476078; border-top: 1px solid var(--ds-line); }
+
+/* Make slideshow header align with the website, instead of a smaller framed app. */
+body:has(.lesson-app) { background: #fff; }
+.lesson-app {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  background: #fff;
+}
+.lesson-app > .ds-header { grid-row: 1; }
+.lesson-app > .course-top-nav { grid-row: 2; }
+.lesson-app > .lesson-stage {
+  grid-row: 3;
+  width: min(100% - 24px, 1200px);
+  margin-inline: auto;
+  padding-block: clamp(12px, 2vw, 24px);
+}
+.lesson-app > .lesson-footer { grid-row: 4; width: min(100% - 24px, 1200px); margin-inline: auto; }
+
+@media (max-width: 760px) {
+  .ds-header__inner {
+    min-height: 74px;
+    grid-template-columns: minmax(0,1fr) auto;
+    grid-template-areas: "brand home" "course course";
+    gap: 8px 12px;
+    padding: 10px 14px;
+  }
+  .ds-header__brand { grid-area: brand; gap: 7px; }
+  .ds-header__home { grid-area: home; padding: 7px 11px; border-radius: 9px; font-size: .87rem; }
+  .ds-header__course { grid-area: course; width: 100%; border-top: 1px solid #e6edf4; padding-top: 7px; font-size: .78rem; }
+  .ds-header__logo { width: 52px; height: 37px; flex-basis: 52px; }
+  .ds-header__brand-copy strong { font-size: .96rem; }
+  .ds-header__brand-copy small { font-size: .72rem; }
+  .course-top-nav__inner { padding-inline: 12px; }
+  .academy-intro { padding-block: 32px 26px; }
+  .academy-intro h1 { font-size: clamp(1.9rem, 6vw, 2.8rem); }
+}
+@media (max-width: 400px) {
+  .ds-header__logo { width: 44px; height: 33px; flex-basis: 44px; }
+  .ds-header__brand-copy small { font-size: .66rem; }
+  .ds-header__brand-copy strong { font-size: .88rem; }
+  .ds-header__course { font-size: .73rem; }
+}
